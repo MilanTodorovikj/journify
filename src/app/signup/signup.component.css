@@ -1,0 +1,80 @@
+
+img{
+  display: inline-block;
+  width: 175px;
+  height: 58px;
+  position: relative;
+  top:5px;
+  margin-right: 5px;
+}
+h1{
+  color: rgb(0,150,209);
+  font-size: 30px;
+  display: block;
+  text-align: center;
+}
+#Homepage{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1%;
+  margin: auto;
+}
+#form{
+  display: block;
+  background-color: white;
+  width: 50%;
+  height: 80%;
+  border-radius: 20px;
+  margin:auto;
+}
+#Signup{
+  margin-top: 2.4%;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#Signup h2{
+  color: #20368f;
+  text-align: center;
+}
+#Signup input:not(.name){
+  display: block;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 6%;
+  border-radius: 5px;
+  font-size: 18px;
+  border: gainsboro 2px solid;
+  height: 32px;
+}
+#Signup .names{
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 0.5%;
+}
+#Signup .name{
+  display: block;
+  width: 35%;
+  margin-top: 2%;
+  margin-bottom: 6%;
+  border-radius: 5px;
+  font-size: 18px;
+  border: gainsboro 2px solid;
+  height: 32px;
+}
+#Signup button{
+  height: 50px;
+  width: 80%;
+  margin-left: 10.5%;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-bottom: 7%;
+  background-color: #000b4f;
+  color:white;
+  font-weight: bold;
+}
+#Signup button:hover{
+  background-color: rgba(0, 11, 79, 0.8);
+  color:white;
+  font-weight: bold;
+}

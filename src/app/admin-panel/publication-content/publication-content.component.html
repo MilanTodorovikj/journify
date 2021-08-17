@@ -1,0 +1,34 @@
+<div *ngIf="!!publication">
+  <div *ngIf="publication.authorId==getUid(); else elseBlock">
+    <div class="main_content">
+      <h2>{{publication.title}} by {{getUsername(publication.authorId)}}#{{getCode(publication.authorId)}}</h2>
+      <div>{{publication.content}}</div>
+      <div class="buttons">
+        <button (click)="editRecord(publication)" routerLink="/admin/detail/edit/{{publication.id}}">Edit Publication</button>
+        <button class="delete" (click)="deleteRecord(publication.id)" routerLink="/admin/list">Delete Publication</button>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #elseBlock>
+      <div *ngIf="publication.pub; else Redirect">
+          <div class="main_content">
+            <h2>{{publication.title}} by {{getUsername(publication.authorId)}}#{{getCode(publication.authorId)}}</h2>
+            <div>{{publication.content}}</div>
+        </div>
+      </div>
+
+      <ng-template #Redirect>
+        <h1>404</h1>
+        <p class="nofound">Page not found, the publication you are looking for is set private</p>
+      </ng-template>
+
+  </ng-template>
+</div>
+<div>
+  <button (click)="goBack()" class="goBack">Back</button>
+</div>
+
+
+
+

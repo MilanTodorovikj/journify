@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+h2 {
+  text-align: center;
+  color: #000b4f;
+}
+
+.publications-menu {
+  padding: 0;
+  padding-top: 6%;
+  margin: auto;
+  max-width: 100%;
+
+  /* flexbox */
+  display: flex;
+  /*flex-direction: row;*/
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+a {
+  background-color: #000b4f;
+  border-radius: 2px;
+  height: 47px;
+  padding: 8% 1rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-family: 'Karla', sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  /*white-space: nowrap;*/
+  /*overflow: hidden;*/
+  /*text-overflow: ellipsis;*/
+  /*width: 100%;*/
+  min-width: 50px;
+  width: 150px;
+  margin: .5rem auto;
+  box-sizing: border-box;
+  border-radius: 20px;
+
+  /* flexbox */
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+@media (min-width: 600px) {
+  a {
+    width: 18%;
+    box-sizing: content-box;
+  }
+}
+
+@media (max-width: 1000px) {
+  a {
+    width: 40%;
+    box-sizing: content-box;
+  }
+}
+@media (max-width: 600px) {
+  a {
+    width: 80%;
+    box-sizing: content-box;
+  }
+}
+@media (max-width: 366px) {
+  a {
+    width: 80%;
+    box-sizing: content-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+
+
+
+a:hover {
+  background-color: #000b4fcc;
+  color: #ffffffcc;
+}
+
+h2{
+  margin-top: 6%;
+  font-weight: normal;
+  @import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap');
+  font-family: 'Georama', sans-serif;
+  letter-spacing: 1px;
+}

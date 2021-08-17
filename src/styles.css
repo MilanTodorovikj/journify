@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+  font-family: sans-serif, Arial, "Roboto Light", Open Sans;
+}
+html,body{
+  background-color: #ebebeb;
+  min-height: 90vh;
+}
+.create{
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  z-index: 1;
+  margin:0;
+  font-size: 40px;
+  text-decoration: none;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #20368f;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.create:hover{
+  background-color: #20368fcc;
+  color: #ffffffcc;
+}

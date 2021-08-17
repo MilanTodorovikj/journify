@@ -1,0 +1,11 @@
+<h2>Latest publications</h2>
+<div class="publications-menu">
+  <a *ngFor="let publication of publications"
+      routerLink="/admin/detail/{{publication.id}}">
+      {{publication.title}}
+  </a>
+</div>
+<button class="create" routerLink="/admin/create">+</button>
+
+
+

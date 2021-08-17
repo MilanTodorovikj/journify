@@ -1,0 +1,16 @@
+<div id="Homepage">
+  <div id="form">
+    <div id="Signup">
+      <h1><img src="/../../assets/images/logofinal.png"/></h1>
+      <h2>Sign up</h2>
+      <div class="names">
+        <input type="text" [(ngModel)]="name" placeholder="Name" class="name"/>
+        <input type="text" [(ngModel)]="surname" placeholder="Surname" class="name"/>
+      </div>
+      <input type="text" [(ngModel)]="usernameSignup" placeholder="Username"/>
+      <input type="text" [(ngModel)]="emailSignup" placeholder="E-mail"/>
+      <input type="password" [(ngModel)]="passwordSignup" placeholder="Password"/>
+      <button (click)="onSignup(name,surname,usernameSignup,emailSignup,passwordSignup)" [disabled]="!usernameSignup || !emailSignup || !passwordSignup || !name || !surname">Sign up</button>
+    </div>
+  </div>
+</div>

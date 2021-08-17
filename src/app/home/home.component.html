@@ -1,0 +1,19 @@
+<div id="Homepage" *ngIf="!isSignedIn">
+  <div *ngIf="!isSignedIn" id="IntroText" layout="column" flex="40">
+    <img src="assets/images/logofinal.png">
+    <p><span class="Journify">JOURNIFY</span> helps you to enjoy and share your personal stories and experiences to the world.</p>
+  </div>
+  <div id="form" *ngIf="!isSignedIn" layout="column" flex="40">
+    <div *ngIf="!isSignedIn" id="Signin">
+      <h2>Sign In</h2>
+      <input type="text" #email placeholder="E-mail"/>
+      <input type="password" #password placeholder="Password"/>
+      <div class="buttons">
+        <button (click)="onSignin(email.value,password.value)">Sign in</button>
+        <div class="signupbutton">
+          <a routerLink="/signup">Sign up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

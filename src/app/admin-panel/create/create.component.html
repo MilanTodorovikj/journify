@@ -1,0 +1,24 @@
+<div class="form-group1">
+  <textarea class="naslov" type="text" class="form-control" [(ngModel)]="publicationTitle" placeholder="Title:" maxlength="52"></textarea>
+</div>
+<div class="form-group2">
+  <textarea class="Content" type="text" class="form-control" [(ngModel)]="publicationContent" placeholder="Your story:"></textarea>
+</div>
+<div class="help">
+  <div class="form-private">
+    <div *ngIf="publicationPublic; else elseBlock"><span class="public1">Public:</span></div>
+    <ng-template #elseBlock>
+      <div class="private">Private:</div>
+    </ng-template>
+    <label class="switch">
+      <input type="checkbox" name="publicationPublic" [(ngModel)]="publicationPublic" checked>
+      <span class="slider round"></span>
+    </label>
+  </div>
+</div>
+
+<div class="form-group">
+  <button class="btn brn-primary" (click)="CreatePublication()" routerLink="/admin/list"[disabled]="!publicationTitle || !publicationContent">Create publication</button>
+</div>
+
+

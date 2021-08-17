@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+.publicationsList{
+  margin: 0 0 2em 5%;
+  list-style-type: none;
+  padding: 0;
+  width: 90%;
+}
+.publicationsList tr {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  left: 0;
+  background-color: #829cd0A5;
+  margin: 0.7em;
+  padding: .2em 0 0.5em;
+  height: 1.6em;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.publicationsList tr:hover {
+  color: #2c3a41;
+  background-color: #829cd0A5;
+  left: .2em;
+}
+.publicationsList tr.selected {
+  background-color: rgb(0,150,209);
+  color: white;
+}
+.publicationsList tr a{
+  text-decoration: none;
+  color: black;
+  display:block;
+  width: 100%;
+}
+.publicationsList tr.selected:hover {
+  background-color: rgba(0,150,209,0.7);
+  color: white;
+}
+.publicationsList tr.selected:active {
+  background-color: rgb(0,150,209);
+  color: white;
+}
+.publicationsList tr .badge {
+  display: inline-block;
+  width: 15px;
+  text-align: center;
+  font-size: small;
+  color: white;
+  padding: 1.1em 0.7em 0.5em 0.8em;
+  background-color:#000b4f;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+h2{
+  margin-left: 5%;
+  margin-top: 3%;
+  font-weight: normal;
+  @import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap');
+  font-family: 'Georama', sans-serif;
+  letter-spacing: 1px;
+  color: #000b4f;
+}
+.help{
+  width: 15%;
+  display: inline-block;
+  text-align: right;
+  margin-left: 10%;
+}
+.public1{
+  font-size: 1em;
+  font-weight: bold;
+  color: #000b4f;
+  text-align: right;
+}
+.private{
+  font-size: 1em;
+  font-weight: bold;
+  color: #990027;
+}
+.Title{
+  display: inline-block;
+  width: 50%;
+  text-overflow: ellipsis;
+  font-size: 20px;
+  font-family: 'Karla', sans-serif;
+  text-transform: capitalize;
+}
+.publicationsList tr .date{
+  display: inline-block;
+  overflow: hidden;
+}

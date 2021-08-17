@@ -1,0 +1,19 @@
+<h2>My publications</h2>
+<table class="publicationsList">
+  <tr *ngFor="let publication1 of publications ; let i=index">
+    <a routerLink="/admin/detail/{{publication1.id}}">
+      <td class="badge">{{i+1}}.</td>
+      <td class="Title">{{publication1.title}}</td>
+      <td class="date">Last Edited: {{publication1.date}}</td>
+      <td class="help">
+        <div class="form-private">
+          <div *ngIf="publication1.pub; else elseBlock"><span class="public1">PUBLIC</span></div>
+          <ng-template #elseBlock>
+            <div class="private">PRIVATE</div>
+          </ng-template>
+        </div>
+      </td>
+    </a>
+  </tr>
+</table>
+<button class="create" routerLink="/admin/create">+</button>
